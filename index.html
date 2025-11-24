@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loading...</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Background Effects -->
+    <div class="background">
+        <!-- Effects injected by JS -->
+    </div>
+
+    <!-- Click to Enter Screen -->
+    <div id="enter-screen">
+        <div class="enter-text">CLICK TO ENTER</div>
+    </div>
+
+    <!-- Main Profile Content -->
+    <div id="main-profile">
+        <div class="card">
+            <div class="avatar-container">
+                <img src="" alt="Avatar" class="avatar">
+                <div class="status-indicator"></div>
+            </div>
+
+            <h1 class="username"></h1>
+            <div class="bio-text"></div>
+
+            <div class="social-links">
+                <!-- Socials injected by JS -->
+            </div>
+
+            <!-- Music Player -->
+            <div class="music-player">
+                <div class="song-info">
+                    <div class="album-art"
+                        style="background-image: url('https://placehold.co/100x100/333/fff?text=♪');"></div>
+                    <div class="track-details">
+                        <div class="track-name">Music</div>
+                        <div class="artist-name">Now Playing</div>
+                    </div>
+                </div>
+
+                <div class="controls">
+                    <button class="control-btn"><i class="fas fa-backward"></i></button>
+                    <button class="control-btn" id="play-btn"><i class="fas fa-play"></i></button>
+                    <button class="control-btn"><i class="fas fa-forward"></i></button>
+                </div>
+
+                <div class="progress-bar">
+                    <div class="progress"></div>
+                </div>
+
+                <div class="lyrics-container">
+                    <div id="lyric-display" class="lyric-line">♪</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <audio id="bg-music" loop>
+        <source src="" type="audio/mpeg">
+    </audio>
+
+    <!-- Load Config FIRST -->
+    <script src="config.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
